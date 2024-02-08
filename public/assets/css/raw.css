@@ -1,0 +1,65 @@
+
+
+.box {
+    background: #fff;
+    padding: 60px 0px;
+}
+.box span {
+    font-size: 15px;
+}
+
+.title {
+    color: #f5eaea;
+}
+
+.box h2,
+h4,
+span {
+    color: rgb(13, 13, 14);
+    font-weight: bold;
+}
+
+.box-part {
+    background: #fff;
+    border-radius: 0;
+    padding: 60px 10px;
+    margin: 30px 0px;
+}
+.text {
+    margin: 20px 0px;
+}
+
+.fa {
+    color: #4183d7;
+}
+@media (max-width: 600px) {
+    .box {
+        padding: 40px 10px;
+    }
+
+    .box span {
+        font-size: 14px;
+    }
+
+    .box-part {
+        padding: 40px 10px;
+        margin: 20px 0px;
+    }
+
+    .text {
+        margin: 15px 0px;
+    }
+
+    .box h2,
+    h4,
+    span {
+        color: #222; /* Adjusted color for better visibility */
+        font-weight: normal; /* Removed bold font weight */
+    }
+
+    .title {
+        color: #222; /* Adjusted color for better visibility */
+    }
+
+    /* Additional adjustments based on your design */
+}

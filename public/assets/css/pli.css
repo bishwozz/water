@@ -1,0 +1,62 @@
+.box {
+    background: #111111;
+    padding: 60px 0px;
+}
+.box span {
+    font-size: 15px;
+}
+.box a {
+    text-decoration: none;
+    color: #0062cc;
+    border-bottom: 2px solid #0062cc;
+}
+
+.title {
+    color: #111111;
+}
+
+.box h2,
+h4,
+span {
+    color: aliceblue;
+}
+
+.box-part {
+    background: #080808;
+    border-radius: 0;
+    padding: 60px 10px;
+    margin: 30px 0px;
+}
+.text {
+    margin: 20px 0px;
+}
+
+.fa {
+    color: #4183d7;
+}
+@media (max-width: 600px) {
+    .box {
+        padding: 40px 10px;
+    }
+
+    .box span {
+        font-size: 14px;
+    }
+
+    .box-part {
+        padding: 40px 10px;
+        margin: 20px 0px;
+    }
+
+    .text {
+        margin: 15px 0px;
+    }
+
+    .box h2,
+    h4,
+    span {
+        color: #fff; /* Adjusted color for better visibility on a dark background */
+    }
+
+    /* Additional adjustments based on your design */
+}

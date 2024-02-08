@@ -1,0 +1,49 @@
+.pro {
+    background-color: aliceblue;
+}
+/***********
+  CONTATTI
+***********/
+section#contact {
+    background-color: #1f2b36;
+    background-image: linear-gradient(rgba(103, 151, 241, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../img/contact-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+section#contact .form-group {
+    margin-bottom: 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+    padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+    height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+    height: 248px;
+}
+
+section#contact .form-control:focus {
+    border-color: #e74c3c;
+    box-shadow: none;
+}
+
+section#contact ::-webkit-input-placeholder,
+section#contact :-moz-placeholder,                /* Firefox 18- */ 
+section#contact ::-moz-placeholder,               /* Firefox 19+ */
+section#contact :-ms-input-placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #ced4da;
+}
