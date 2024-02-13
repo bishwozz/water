@@ -44,14 +44,6 @@ return new class extends Migration
 
         });
 
-        Schema::create('watrers', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name')->nullable();
-            $table->string('image', 500)->nullable();
-            $table->longText('discription')->nullable();
-            $table->timestamps();
-
-        });
 
     }
 
@@ -64,7 +56,7 @@ return new class extends Migration
         Schema::dropIfExists('missions');
         Schema::dropIfExists('raws');
         Schema::dropIfExists('contacts');
-        Schema::dropIfExists('waters');
+   
 
     }
 };

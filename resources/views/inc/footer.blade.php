@@ -1,9 +1,4 @@
-<!-- Footer -->
-{{--  @php
-    use App\Models\Setting;
 
-    $settings = Setting::all()->get();
-@endphp  --}}
 
 <footer class="container-fluid bg-grey py-5">
     <div class="container">
@@ -23,9 +18,10 @@
                         <h6> About Company</h6>
                         <p>{{ $settings->title }}<br>
                             {{ $settings->head }}<br>
-                            {{ $settings->phone }}<br>
+                            <a href="https://wa.me/+9779851084506?text=urlencodedtext  "> {{ $settings->phone }}</a><br>
                             {{ $settings->reg }}<br>
-                            {{ $settings->pan }}<br></p>
+                            {{ $settings->pan }}<br>
+                        </p>
                         </p>
                     </div>
                 </div>

@@ -3,11 +3,10 @@
         {{ trans('backpack::base.dashboard') }}</a></li>
 
 <x-backpack::menu-item title="Logos" icon="la la-question" :link="backpack_url('logo')" />
-
-
-
-
-<x-backpack::menu-item title="Products" icon="la la-question" :link="backpack_url('products')" />
+<x-backpack::menu-dropdown title="Raw Mater" icon="la la-group">
+    <x-backpack::menu-dropdown-item title="Products" icon="la la-question" :link="backpack_url('products')" />
+    <x-backpack::menu-dropdown-item title="Images" icon="la la-question" :link="backpack_url('image')" />
+</x-backpack::menu-dropdown>
 <x-backpack::menu-item title="Waters" icon="la la-question" :link="backpack_url('water')" />
 
 <x-backpack::menu-dropdown title="About" icon="la la-group">
@@ -16,3 +15,6 @@
     <x-backpack::menu-dropdown-item title="Settings" icon="la la-check" :link="backpack_url('setting')" />
     <x-backpack::menu-dropdown-item title="Missions" icon="la la-map" :link="backpack_url('mission')" />
 </x-backpack::menu-dropdown>
+
+
+<x-backpack::menu-item title="Wtrs" icon="la la-question" :link="backpack_url('wtr')" />

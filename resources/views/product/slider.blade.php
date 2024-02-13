@@ -135,11 +135,11 @@
         </div>
         <div class="carousel-item">
             <div class="card">
-                <div class="img-wrapper"><img src="storage/unnamed-uya6.jpg" class="d-block w-100" alt="...">
+                <div class="img-wrapper"><img src="storage/unnamed-wCbl.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="card-body">
                     <div class="thumb-content">
-                        <h5>Apple iPad</h5>
+                        <h5>Core Sand</h5>
                         <div class="star-rating">
                             <ul class="list-inline">
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -157,10 +157,11 @@
         </div>
         <div class="carousel-item">
             <div class="card">
-                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                <div class="img-wrapper"><img src="storage/treated-sand-500x500-3jyo.webp" class="d-block w-100"
+                        alt="..."> </div>
                 <div class="card-body">
                     <div class="thumb-content">
-                        <h5>Apple iPad</h5>
+                        <h5>Treated black sand</h5>
                         <div class="star-rating">
                             <ul class="list-inline">
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -178,10 +179,11 @@
         </div>
         <div class="carousel-item">
             <div class="card">
-                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                <div class="img-wrapper"><img src="storage/download-3-2H22.jpg" class="d-block w-100" alt="...">
+                </div>
                 <div class="card-body">
                     <div class="thumb-content">
-                        <h5>Apple iPad</h5>
+                        <h5>Ferric Hydroxide</h5>
                         <div class="star-rating">
                             <ul class="list-inline">
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -199,10 +201,11 @@
         </div>
         <div class="carousel-item">
             <div class="card">
-                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                <div class="img-wrapper"><img src="storage/download-2-zjJC.jpg" class="d-block w-100"
+                        alt="..."> </div>
                 <div class="card-body">
                     <div class="thumb-content">
-                        <h5>Apple iPad</h5>
+                        <h5>Treated Zeolite</h5>
                         <div class="star-rating">
                             <ul class="list-inline">
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -220,10 +223,11 @@
         </div>
         <div class="carousel-item">
             <div class="card">
-                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                <div class="img-wrapper"><img src="storage/download-1-y8Dh.jpg" class="d-block w-100"
+                        alt="..."> </div>
                 <div class="card-body">
                     <div class="thumb-content">
-                        <h5>Apple iPad</h5>
+                        <h5>Anthracite Coal</h5>
                         <div class="star-rating">
                             <ul class="list-inline">
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -241,12 +245,13 @@
         </div>
         <div class="carousel-item">
             <div class="card">
-                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                <div class="img-wrapper"><img src="storage/silex-filter-media-500x500-lAWz.webp"
+                        class="d-block w-100" alt="..."> </div>
                 <div class="card-body">
 
 
                     <div class="thumb-content">
-                        <h5>Apple iPad</h5>
+                        <h5>Silex</h5>
                         <div class="star-rating">
                             <ul class="list-inline">
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -264,10 +269,10 @@
         </div>
         <div class="carousel-item">
             <div class="card">
-                <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                <div class="img-wrapper"><img src="storage/activated-carbon-pallets-500x500-r7J3.webp" class="d-block w-100" alt="..."> </div>
                 <div class="card-body">
                     <div class="thumb-content">
-                        <h5>Apple iPad</h5>
+                        <h5>Activated Carbon Pallets</h5>
                         <div class="star-rating">
                             <ul class="list-inline">
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -351,5 +356,4 @@
     } else {
         $(multipleCardCarousel).addClass("slide");
     }
- 
 </script>

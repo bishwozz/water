@@ -12,7 +12,7 @@
         }
 
         #banner h2 {
-            color: #dcdcde;
+
             font-size: 50px;
             font-weight: bold;
         }
@@ -22,7 +22,7 @@
         <div class="inner">
 
             <header>
-                <h2>Products</h2>
+                <h2 class="animate-charcter">Products</h2>
             </header>
 
 
@@ -68,64 +68,8 @@
                 </div>
             </div>
         </div>
-    </section>#
+    </section>
 
-
-
-    {{--  <!-- Main -->
-    <article id="main">
-
-
-        <!-- One -->
-        <section class="wrapper style4 container">
-            <h2 Style="font-weight:bold;"> Chemicals, Minerals And Filter Media</h2>
-            @foreach ($products as $product)
-                <div class="row gtr-150">
-                    <div class="col-8 col-12-narrower">
-                        <!-- Content -->
-                        <div class="content">
-                            <section>
-                                <header>
-                                    <h1 Style="font-weight:bold;"><u>{{ $product->name }}</u>
-                                        <h1>{{ $product->second }}</h1>
-                                    </h1>
-
-                                </header>
-                                <a href="#" class="image featured"></a><img src="{{ 'storage/' . $product->image }} "
-                                    height="400" width="700"></a>
-                            </section>
-                        </div>
-                    </div>
-                    <div class="col-4 col-12-narrower">
-                        <!-- Sidebar -->
-                        <div class="sidebar">
-                            <section>
-                                <br> <br> <br> <br> <br><br>
-
-                                <p>{{ $product->grade }}<br>
-                                    {{ $product->size }}<br>
-                                    {{ $product->pack }}</p>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <header>
-                        <h3>Application:</h3>
-                    </header>
-                    <h3> {{ $product->discription }}</h3>
-                </div>
-                <hr>
-            @endforeach
-
-
-
-        </section>
-
-
-
-    </article>  --}}
     <div class="box">
         <h2>Chemicals, Minerals And Filter Media</h2>
         <div class="container">
@@ -137,8 +81,8 @@
                         <div class="box-part text-center">
                             <div class="title">
 
-
-                                <img src="{{ 'storage/' . $product->image }}" height="300" width="300">
+                                <a href="{{ url('product/' . $product->id) }}">
+                                    <img src="{{ 'storage/' . $product->image }}" height="300" width="300"></a>
 
 
                             </div>

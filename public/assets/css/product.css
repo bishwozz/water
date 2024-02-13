@@ -1,0 +1,238 @@
+.pd-wrap {
+    padding: 40px 0;
+    font-family: "Poppins", sans-serif;
+}
+.heading-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.carousel-inner img {
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 509px;
+    height: 406px !important;
+}
+
+#myCarousel .carousel-indicators {
+    position: static;
+    margin-top: 0px;
+}
+
+#myCarousel .carousel-indicators > li {
+    width: 100px;
+}
+
+#myCarousel .carousel-indicators li img {
+    display: block;
+    opacity: 0.5;
+}
+
+#myCarousel .carousel-indicators li.active img {
+    opacity: 1;
+}
+
+#myCarousel .carousel-indicators li:hover img {
+    opacity: 0.75;
+}
+.gallery-item {
+    float: left;
+}
+
+/*set a border on the images to prevent shifting*/
+
+.gallery img {
+    border: 2px solid white;
+}
+
+/*Change the colour*/
+
+.active img {
+    border: 2px solid #333 !important;
+}
+
+.product-name {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 4px;
+}
+
+.display-flex {
+    display: flex;
+}
+.align-center {
+    align-items: center;
+}
+.product-info {
+    width: 100%;
+}
+.reviews-counter {
+    font-size: 13px;
+}
+.reviews-counter span {
+    vertical-align: -2px;
+}
+.rate {
+    float: left;
+    padding: 0 10px 0 0;
+}
+.rate:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+}
+.rate:not(:checked) > label {
+    float: right;
+    width: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 21px;
+    color: #ccc;
+    margin-bottom: 0;
+    line-height: 21px;
+}
+.rate:not(:checked) > label:before {
+    content: "\2605";
+}
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+.product-dtl p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #7a7a7a;
+}
+
+.product-info-tabs {
+    margin-top: 25px;
+}
+.product-info-tabs .nav-tabs {
+    border-bottom: 2px solid #d8d8d8;
+}
+.product-info-tabs .nav-tabs .nav-item {
+    margin-bottom: 0;
+}
+.product-info-tabs .nav-tabs .nav-link {
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: #323232;
+    margin-bottom: 2px;
+}
+.product-info-tabs .nav-tabs .nav-item .nav-link:hover {
+    border: none;
+}
+.product-info-tabs .nav-tabs .nav-item.show .nav-link,
+.product-info-tabs .nav-tabs .nav-link.active,
+.product-info-tabs .nav-tabs .nav-link.active:hover {
+    border: none;
+    border-bottom: 2px solid #d8d8d8;
+    font-weight: bold;
+}
+.product-info-tabs .tab-content .tab-pane {
+    padding: 30px 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #7a7a7a;
+}
+.review-form .form-group {
+    clear: both;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.review-form .rate {
+    float: none;
+    display: inline-block;
+}
+.review-heading {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    color: #000;
+}
+.review-form .form-control {
+    font-size: 14px;
+}
+.review-form input.form-control {
+    height: 40px;
+}
+.review-form textarea.form-control {
+    resize: none;
+}
+.review-form .round-black-btn {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+button.contact_form_submit {
+    background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%);
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+/* Default styles */
+
+/* Add responsive styles */
+@media (max-width: 767px) {
+    .carousel-item img {
+        width: 100%; /* Make carousel images full width on small screens */
+        height: auto !important; /* Allow height to adjust proportionally */
+    }
+    .carousel-indicators li {
+        width: auto; /* Adjust carousel indicators width for smaller screens */
+    }
+    .gallery-item {
+        float: none; /* Remove float on gallery items for stacking on small screens */
+    }
+    .product-info {
+        width: 100%; /* Make product info full width on small screens */
+    }
+    .product-info-tabs .tab-content .tab-pane {
+        padding: 20px; /* Adjust padding on tab content for smaller screens */
+    }
+    .review-form .rate {
+        float: none; /* Remove float on rate elements for better alignment */
+        display: inline-block; /* Ensure rate elements are displayed properly */
+    }
+    .review-form input.form-control,
+    .review-form textarea.form-control {
+        width: 100%; /* Make form inputs full width on small screens */
+    }
+
+    img:nth-child(n + 4) {
+        display: none;
+    }
+
+    .contact_us {
+        padding: 80px 0; /* Reduce padding on contact section for smaller screens */
+    }
+    h3 {
+        font-size: 30px; /* Decrease heading font size for smaller screens */
+    }
+    button.contact_form_submit {
+        font-size: 12px; /* Decrease button font size for smaller screens */
+        padding: 8px 12px; /* Adjust button padding for smaller screens */
+    }
+}

@@ -116,9 +116,9 @@ body {
 
 #banner {
     background-attachment: scroll, scroll, scroll, fixed;
- 
- cursor: default;
-    padding: 6em ;
+
+    cursor: default;
+    padding: 6em;
     text-align: center;
     position: relative;
 
@@ -136,7 +136,7 @@ body {
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
-    margin-bottom: 11em;
+    margin-bottom: 1em;
     color: #fff;
     background-clip: text;
     text-fill-color: transparent;
@@ -144,12 +144,42 @@ body {
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
-    font-size: 30px;
+    font-size: 70px;
+    font-weight: bold;
 }
 
 @keyframes textclip {
     to {
-        background-position: 200% ;
+        background-position: 200%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #banner {
+        padding: 3em; /* Reduce padding for smaller screens */
+    }
+    .animate-charcter {
+        text-transform: uppercase;
+        background-image: linear-gradient(
+            -225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%
+        );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        margin-bottom: 1em;
+        color: #fff;
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+        display: inline-block;
+        font-size: 44px;
+        font-weight: bold;
     }
 }
 

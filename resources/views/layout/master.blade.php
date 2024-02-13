@@ -28,12 +28,13 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-     <link rel="stylesheet" href="assets/css/main.css" />
+     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />
      <noscript>
-         <link rel="stylesheet" href="assets/sass/noscript.css" />
+         <link rel="stylesheet" href="{{ asset('assets/sass/noscript.css') }}" />
      </noscript>
-     <link rel="stylesheet" href="assets/css/footer.css" />
-     <link rel="stylesheet" href="assets/css/header.css">
+     <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}" />
+     <link rel="stylesheet" href="{{ asset('assets/css/header.css') }}">
+     
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
      <style>
@@ -66,7 +67,7 @@
      @include('inc.footer')
 
 
-     <script src="assets/js/jquery.min.js"></script>
+     <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
      </script>
@@ -81,13 +82,13 @@
      </script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-     <script src="assets/js/jquery.dropotron.min.js"></script>
-     <script src="assets/js/jquery.scrolly.min.js"></script>
-     <script src="assets/js/jquery.scrollex.min.js"></script>
-     <script src="assets/js/browser.min.js"></script>
-     <script src="assets/js/breakpoints.min.js"></script>
-     <script src="assets/js/util.js"></script>
-     <script src="assets/js/main.js"></script>
+     <script src="{{ asset('assets/js/jquery.dropotron.min.js') }}"></script>
+     <script src="{{ asset('assets/js/jquery.scrolly.min.js') }}"></script>
+     <script src="{{ asset('assets/js/jquery.scrollex.min.js') }}"></script>
+     <script src="{{ asset('assets/js/browser.min.js') }}"></script>
+     <script src="{{ asset('assets/js/breakpoints.min.js') }}"></script>
+     <script src="{{ asset('assets/js/util.js') }}"></script>
+     <script src="{{ asset('assets/js/main.js') }}"></script>
 
 
  </body>

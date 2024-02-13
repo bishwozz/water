@@ -10,7 +10,7 @@
         <div class="inner">
 
             <header>
-                <h2>About Us</h2>
+                <h2 class="animate-charcter">About Us</h2>
             </header>
 
 
@@ -95,6 +95,65 @@
                                 </div>
                                 <div class="text">
                                     <h2>{{ $missions->pir }}</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <h2></h2>
+                            <div class="container">
+                                <div class="row">
+
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                                        <div class="box-part text-center">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                                        <div class="box-part text-center">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                                        <div class="box-part text-center">
+
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                                        <div class="box-part text-center">
+
+
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                                        <div class="box-part text-center">
+
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                                        <div class="box-part text-center">
+
+
+
+                                        </div>
+                                    </div>
+
+
                                 </div>
                             </div>
                         </div>

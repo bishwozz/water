@@ -19,20 +19,33 @@ class ContactController extends Controller
     }
     public function store(Request $request)
     {
-        $meassage = $request->validate([
+        $contact = $request->validate([
 
             'name' => 'required|string',
+            'email' => 'required|email',
+            'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
+            'meas' => 'required',
 
         ]);
+        // dd($request);
 
-        Contact::create([
-            'name' => $request->input('name'),
-            'email' => $request->input('email'),
-            'phone' => $request->input('phone'),
-            'meas' => $request->input('meas'),
-        ]);
+        try {
 
-        return view('frontend.contact');
+            Contact::create([
+                'name' => $request->input('name'),
+                'email' => $request->input('email'),
+                'phone' => $request->input('phone'),
+                'meas' => $request->input('meas'),
+
+            ]);
+            dd($request);
+
+            return response()->json(['success' => 'creating the contact.']);
+
+        } catch (\Throwable $th) {
+            return response()->json(['error' => 'An error occurred while creating the contact.']);
+
+        }
 
     }
 }

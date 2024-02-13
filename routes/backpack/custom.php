@@ -1,11 +1,14 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\frontend\AboutController;
-use App\Http\Controllers\frontend\WaterController;
 use App\Http\Controllers\frontend\ContactController;
+use App\Http\Controllers\frontend\DetailController;
+use App\Http\Controllers\frontend\PlantController;
 use App\Http\Controllers\frontend\ProductController;
 use App\Http\Controllers\frontend\ProfileController;
+use App\Http\Controllers\frontend\ReviewController;
+use App\Http\Controllers\frontend\WaterController;
+use Illuminate\Support\Facades\Route;
 
 // --------------------------
 // Custom Backpack Routes
@@ -33,12 +36,14 @@ Route::group([
     'namespace' => 'App\Http\Controllers',
 ], function () { // custom admin routes
     Route::crud('logo', 'LogoCrudController');
-    Route::crud('settings', 'SettingCrudController');
+    Route::crud('setting', 'SettingCrudController');
     Route::crud('about', 'AboutCrudController');
     Route::crud('director', 'DirectorCrudController');
     Route::crud('mission', 'MissionCrudController');
     Route::crud('products', 'ProductCrudController');
     Route::crud('water', 'WaterCrudController');
+    Route::crud('image', 'ImageCrudController');
+    Route::crud('wtr', 'WtrCrudController');
 
 });
 
@@ -53,6 +58,11 @@ Route::group([
 
     Route::get('about', [AboutController::class, 'index'])->name('about');
     Route::get('contact', [ContactController::class, 'index'])->name('contact');
-    Route::get('contact', [ContactController::class, 'store'])->name('contact');
+    Route::post('contact', [ContactController::class, 'store'])->name('contact');
+
+    Route::get('product/{id}', [DetailController::class, 'index']);
+    Route::get('all/{id}', [PlantController::class, 'index']);
+
+    Route::post('review', [ReviewController::class, 'store'])->name('review.store');
 
 });

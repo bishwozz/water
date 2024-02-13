@@ -21,7 +21,7 @@ class WaterCrudController extends CrudController
 
     /**
      * Configure the CrudPanel object. Apply settings to all operations.
-     * 
+     *
      * @return void
      */
     public function setup()
@@ -33,7 +33,7 @@ class WaterCrudController extends CrudController
 
     /**
      * Define what happens when the List operation is loaded.
-     * 
+     *
      * @see  https://backpackforlaravel.com/docs/crud-operation-list-entries
      * @return void
      */
@@ -49,7 +49,7 @@ class WaterCrudController extends CrudController
 
     /**
      * Define what happens when the Create operation is loaded.
-     * 
+     *
      * @see https://backpackforlaravel.com/docs/crud-operation-create
      * @return void
      */
@@ -57,6 +57,17 @@ class WaterCrudController extends CrudController
     {
         CRUD::setValidation(WaterRequest::class);
         CRUD::setFromDb(); // set fields from db columns.
+
+        CRUD::addFields([
+            ['name' => 'image',
+                'type' => 'upload',
+                'label' => 'image',
+                'withFiles' => true,
+                'wrapper' => [
+                    'class' => 'form-group col-md-4',
+                ],
+            ],
+        ]);
 
         /**
          * Fields can be defined using the fluent syntax:
@@ -66,7 +77,7 @@ class WaterCrudController extends CrudController
 
     /**
      * Define what happens when the Update operation is loaded.
-     * 
+     *
      * @see https://backpackforlaravel.com/docs/crud-operation-update
      * @return void
      */

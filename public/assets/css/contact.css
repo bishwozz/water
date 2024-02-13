@@ -1,49 +1,72 @@
-.pro {
-    background-color: aliceblue;
-}
-/***********
-  CONTATTI
-***********/
-section#contact {
-    background-color: #1f2b36;
-    background-image: linear-gradient(rgba(103, 151, 241, 0.6), rgba(0, 0, 0, 0.6)),
-        url("../img/contact-bg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.body {
+    color: #fff;
 }
 
-section#contact .form-group {
-    margin-bottom: 25px;
+.contact_us {
+    background-color: #f1f1f1;
+    padding: 120px 0px;
+}
+.form-label {
+    color: #000;
+    font-weight: 200;
+}
+h3 {
+    color: #000;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-section#contact .form-group input,
-section#contact .form-group textarea {
-    padding: 20px;
+button.contact_form_submit {
+    background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%);
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 2px;
 }
 
-section#contact .form-group input.form-control {
-    height: auto;
+.map_sec {
+    padding: 50px 0px;
+}
+.map_inner h4,
+.map_inner p {
+    color: #000;
+    text-align: center;
+}
+.map_inner p {
+    font-size: 13px;
+}
+.map_bind {
+    margin-top: 50px;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
-section#contact .form-group textarea.form-control {
-    height: 248px;
-}
+/* Add responsive styles */
+@media (max-width: 767px) {
+    .contact_us {
+        padding: 80px 0; /* Reduce padding on contact section for smaller screens */
+    }
+    h3 {
+        font-size: 30px; /* Decrease heading font size for smaller screens */
+    }
+    button.contact_form_submit {
+        font-size: 12px; /* Decrease button font size for smaller screens */
+        padding: 8px 12px; /* Adjust button padding for smaller screens */
+    }
+    .map_sec {
+        padding: 30px 0; /* Reduce padding on map section for smaller screens */
+    }
+    .map_bind {
+        margin-top: 30px; /* Adjust margin top on map container for smaller screens */
+    }
 
-section#contact .form-control:focus {
-    border-color: #e74c3c;
-    box-shadow: none;
-}
 
-section#contact ::-webkit-input-placeholder,
-section#contact :-moz-placeholder,                /* Firefox 18- */ 
-section#contact ::-moz-placeholder,               /* Firefox 19+ */
-section#contact :-ms-input-placeholder {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    color: #ced4da;
 }
