@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('logos', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable();
-            $table->string('image', 500)->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
 
@@ -52,7 +52,7 @@ return new class extends Migration
         Schema::create('directors', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->nullable();
-            $table->string('image', 500)->nullable();
+            $table->string('image')->nullable();
             $table->longText('des')->nullable();
             $table->timestamps();
         });

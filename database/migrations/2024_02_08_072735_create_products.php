@@ -14,10 +14,12 @@ return new class extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->nullable();
-            $table->string('image', 500)->nullable();
+            $table->string('image')->nullable();
             $table->string('grade')->nullable();
             $table->string('size')->nullable();
             $table->string('pack')->nullable();
+            $table->longText('dis')->nullable();
+
             $table->longText('discription')->nullable();
             $table->timestamps();
 
@@ -43,7 +45,27 @@ return new class extends Migration
             $table->timestamps();
 
         });
+        Schema::create('wtrs', function (Blueprint $table) {
 
+            $table->increments('id');
+            $table->string('name')->nullable();
+            $table->longText('page')->nullable();
+            $table->longText('dis')->nullable();
+
+            $table->timestamps();
+
+        });
+        Schema::create('waters', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name')->nullable();
+            $table->string('sec')->nullable();
+            $table->string('image', 500)->nullable();
+            $table->longText('discription')->nullable();
+            $table->longText('dis')->nullable();
+
+            $table->timestamps();
+
+        });
 
     }
 
@@ -56,7 +78,8 @@ return new class extends Migration
         Schema::dropIfExists('missions');
         Schema::dropIfExists('raws');
         Schema::dropIfExists('contacts');
-   
+        Schema::dropIfExists('wtrs');
+        Schema::dropIfExists('waters');
 
     }
 };

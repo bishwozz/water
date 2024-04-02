@@ -42,9 +42,9 @@ class LogoCrudController extends CrudController
         CRUD::setFromDb(); // set columns from db columns.
         CRUD::addColumn([
             'name' => 'image',
-            'type' => 'upload',
-            'label' => 'Image',
-            'disk' => 'public',
+            'type' => 'logo',
+            'label' => 'Logo',
+            'disk' => 'uploads',
         ]);
 
         /**
@@ -74,9 +74,9 @@ class LogoCrudController extends CrudController
             ],
             [
                 'name' => 'image',
-                'type' => 'upload',
+                'type' => 'image',
                 'label' => 'Logo',
-                'withFiles' => true,
+                'disk' => 'uploads',
                 'wrapper' => [
                     'class' => 'form-group col-md-4',
                 ],

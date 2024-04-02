@@ -31,8 +31,8 @@ class ProductCrudController extends CrudController
         CRUD::setModel(\App\Models\Product::class);
         CRUD::setRoute(config('backpack.base.route_prefix') . '/products');
         CRUD::setEntityNameStrings('products', 'products');
-        $this->addFilters();
-        CRUD::enableExportButtons();
+        // $this->addFilters();
+        // CRUD::enableExportButtons();
 
         /**
          * Define what happens when the List operation is loaded.
@@ -41,23 +41,23 @@ class ProductCrudController extends CrudController
          * @return void
          */
     }
-    public function addFilters()
-    {$user = backpack_user();
+    // public function addFilters()
+    // {$user = backpack_user();
 
-        $this->crud->addfilter(
-            [
-                'name' => 'name',
-                'label' => 'Name ',
-                'type' => 'text',
-            ], function () {
-                return Product::all()->pluck('name', 'id')->toArray();
-            }, function ($value) {
+    //     $this->crud->addfilter(
+    //         [
+    //             'name' => 'name',
+    //             'label' => 'Name ',
+    //             'type' => 'text',
+    //         ], function () {
+    //             return Product::all()->pluck('name', 'id')->toArray();
+    //         }, function ($value) {
 
-                $this->crud->addClause('where', 'name', 'LIKE', '%' . $value . '%');
+    //             $this->crud->addClause('where', 'name', 'LIKE', '%' . $value . '%');
 
-            }
-        );
-    }
+    //         }
+    //     );
+    // }
 
     protected function setupListOperation()
     {
@@ -78,12 +78,13 @@ class ProductCrudController extends CrudController
     protected function setupCreateOperation()
     {
         CRUD::setValidation(ProductsRequest::class);
-        CRUD::setFromDb(); // set fields from db columns.
+        CRUD::setFromDb();
+
+        // set fields from db columns.
         CRUD::addFields([
             ['name' => 'image',
-                'type' => 'upload',
+                'type' => 'image',
                 'label' => 'image',
-                'withFiles' => true,
                 'wrapper' => [
                     'class' => 'form-group col-md-4',
                 ],
